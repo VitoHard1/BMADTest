@@ -1,0 +1,47 @@
+<section class="card">
+  <div class="heading">
+    <h2>Events</h2>
+    <button type="button" (click)="refresh()" [disabled]="isLoading()">Refresh</button>
+  </div>
+
+  <form [formGroup]="filterForm" class="filters" (ngSubmit)="applyFilters()">
+    <label for="filterUserId">Filter by User ID</label>
+    <input id="filterUserId" type="text" formControlName="userId" placeholder="user-1" />
+
+    <label for="filterType">Filter by Type</label>
+    <select id="filterType" formControlName="type">
+      <option *ngFor="let option of typeOptions" [value]="option">{{ option }}</option>
+    </select>
+
+    <button type="submit" [disabled]="isLoading()">Apply Filters</button>
+  </form>
+
+  <p class="state" *ngIf="isLoading()">Loading events...</p>
+  <p class="error" *ngIf="errorMessage()">{{ errorMessage() }}</p>
+
+  <div class="table-wrap" *ngIf="!isLoading() && !errorMessage()">
+    <table *ngIf="events().length > 0; else noData">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>UserId</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>CreatedAt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let event of events()">
+          <td class="mono">{{ event.id }}</td>
+          <td>{{ event.userId }}</td>
+          <td>{{ event.type }}</td>
+          <td>{{ event.description }}</td>
+          <td [title]="event.createdAt">{{ event.createdAt | date: 'medium' }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #noData>
+      <p class="state">No events found for current filters.</p>
+    </ng-template>
+  </div>
+</section>

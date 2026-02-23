@@ -1,0 +1,22 @@
+<main class="page">
+  <div class="page-glow page-glow-left" aria-hidden="true"></div>
+  <div class="page-glow page-glow-right" aria-hidden="true"></div>
+
+  <section class="shell">
+    <header class="hero">
+      <p class="eyebrow">Car Rental Portal</p>
+      <h1>Reenbit Event Hub</h1>
+      <p class="subtitle">Submit car interactions and inspect persisted events with filters.</p>
+    </header>
+
+    <section class="workspace">
+      <div class="form-panel">
+        <app-event-form (eventCreated)="eventsTable.refresh()"></app-event-form>
+      </div>
+
+      <div class="table-panel">
+        <app-events-table #eventsTable></app-events-table>
+      </div>
+    </section>
+  </section>
+</main>

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReenbitEventHub.Domain\ReenbitEventHub.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(EnableDefaultCompileItems)' == 'false'">
+    <!-- BE-02: keep these contracts available even in design-time builds with default compile items disabled. -->
+    <Compile Include="Events\GetEventsResponse.cs" />
+    <Compile Include="Events\GetEventsQueryRequest.cs" />
+  </ItemGroup>
+
+</Project>

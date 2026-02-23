@@ -1,0 +1,36 @@
+<section class="card">
+  <h2>Submit Event</h2>
+
+  <form [formGroup]="form" class="form">
+    <label for="userId">User ID</label>
+    <input id="userId" type="text" formControlName="userId" placeholder="user-1" />
+    <p class="error" *ngIf="hasError('userId', 'required')">User ID is required.</p>
+
+    <label for="carId">Car</label>
+    <select id="carId" formControlName="carId">
+      <option value="car-1">car-1 Toyota Corolla</option>
+      <option value="car-2">car-2 VW Golf</option>
+    </select>
+    <p class="error" *ngIf="hasError('carId', 'required')">Car is required.</p>
+
+    <label for="description">Description</label>
+    <textarea
+      id="description"
+      formControlName="description"
+      rows="3"
+      (input)="onDescriptionInput()"
+    ></textarea>
+
+    <div class="actions">
+      <button type="button" (click)="submit('ViewCar')" [disabled]="isSubmitting()">
+        View Selected Car
+      </button>
+      <button type="button" (click)="submit('ReserveCar')" [disabled]="isSubmitting()">
+        Reserve Selected Car
+      </button>
+    </div>
+  </form>
+
+  <p class="success" *ngIf="successMessage()">{{ successMessage() }}</p>
+  <p class="error" *ngIf="errorMessage()">{{ errorMessage() }}</p>
+</section>

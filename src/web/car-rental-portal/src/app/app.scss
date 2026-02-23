@@ -1,0 +1,91 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  padding: 1.5rem 1rem 3rem;
+  background:
+    radial-gradient(130% 120% at 0% 0%, #e0f2fe 0%, transparent 50%),
+    radial-gradient(120% 90% at 100% 10%, #cffafe 0%, transparent 45%),
+    linear-gradient(180deg, #f0fdfa 0%, #f8fafc 100%);
+}
+
+.shell {
+  width: min(88rem, 100%);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.hero {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1rem;
+  padding: 1.1rem 1.25rem;
+  backdrop-filter: blur(6px);
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #0369a1;
+}
+
+h1 {
+  margin: 0.3rem 0 0;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  line-height: 1.1;
+  color: #0f172a;
+}
+
+.subtitle {
+  margin: 0.6rem 0 0;
+  color: #334155;
+}
+
+.workspace {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.form-panel,
+.table-panel {
+  min-width: 0;
+}
+
+.page-glow {
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.page-glow-left {
+  left: -8rem;
+  top: -8rem;
+  background: #34d399;
+}
+
+.page-glow-right {
+  right: -8rem;
+  top: 2rem;
+  background: #38bdf8;
+}
+
+@media (min-width: 1100px) {
+  .workspace {
+    grid-template-columns: minmax(20rem, 26rem) minmax(0, 1fr);
+  }
+
+  .form-panel {
+    position: sticky;
+    top: 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+@CarRentalApi_HostAddress = http://localhost:5113
+
+POST {{CarRentalApi_HostAddress}}/api/events
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "user-123",
+  "type": "PageView",
+  "description": "Viewed car details for car-1"
+}
+
+###
+
+POST {{CarRentalApi_HostAddress}}/api/events
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": "",
+  "type": "InvalidType",
+  "description": ""
+}
+
+###
+
+GET {{CarRentalApi_HostAddress}}/api/events
+Accept: application/json
+
+###

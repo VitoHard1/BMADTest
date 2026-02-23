@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="ReenbitEventHub.Application/ReenbitEventHub.Application.csproj" />
+  <Project Path="ReenbitEventHub.Application.Tests/ReenbitEventHub.Application.Tests.csproj" />
+  <Project Path="CarRentalApi/CarRentalApi.csproj" />
+  <Project Path="ReenbitEventHub.Domain/ReenbitEventHub.Domain.csproj" />
+  <Project Path="ReenbitEventHub.Infrastructure/ReenbitEventHub.Infrastructure.csproj" />
+</Solution>

@@ -1,0 +1,14 @@
+[2026-02-20 23:32:13.423] [00007EC0] === Logging started ===
+[2026-02-20 23:32:13.430] [00007EC0] Executing: "C:\Program Files\dotnet\dotnet.exe" test CarRentalApi.slnx, PID: 32448, PPID: 41736
+[2026-02-20 23:32:13.433] [00007EC0] IsElevated: False
+[2026-02-20 23:32:13.433] [00007EC0] Is64BitProcess: True
+[2026-02-20 23:32:13.433] [00007EC0] RebootPending: False
+[2026-02-20 23:32:13.433] [00007EC0] ProcessorArchitecture: amd64
+[2026-02-20 23:32:13.433] [00007EC0] HostArchitecture: x64
+[2026-02-20 23:32:13.433] [00007EC0] SdkDirectory: 10.0.103
+[2026-02-20 23:32:13.433] [00007EC0] VerifySignatures: False
+[2026-02-20 23:32:13.433] [00007EC0] SDK feature band: 10.0.100
+[2026-02-20 23:32:18.740] [00007EC0] Shutting down
+[2026-02-20 23:32:18.740] [00007EC0] Shutdown completed.
+[2026-02-20 23:32:18.740] [00007EC0] Restart required: False
+[2026-02-20 23:32:18.741] [00007EC0] === Logging ended ===

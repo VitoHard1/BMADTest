@@ -1,0 +1,14 @@
+[2026-02-20 22:12:52.922] [00003258] === Logging started ===
+[2026-02-20 22:12:52.929] [00003258] Executing: "C:\Program Files\dotnet\dotnet.exe" build .\CarRentalFunction.slnx /p:UseSharedCompilation=false, PID: 12888, PPID: 31492
+[2026-02-20 22:12:52.932] [00003258] IsElevated: False
+[2026-02-20 22:12:52.932] [00003258] Is64BitProcess: True
+[2026-02-20 22:12:52.932] [00003258] RebootPending: False
+[2026-02-20 22:12:52.932] [00003258] ProcessorArchitecture: amd64
+[2026-02-20 22:12:52.932] [00003258] HostArchitecture: x64
+[2026-02-20 22:12:52.932] [00003258] SdkDirectory: 10.0.103
+[2026-02-20 22:12:52.932] [00003258] VerifySignatures: False
+[2026-02-20 22:12:52.932] [00003258] SDK feature band: 10.0.100
+[2026-02-20 22:13:21.096] [00003258] Shutting down
+[2026-02-20 22:13:21.097] [00003258] Shutdown completed.
+[2026-02-20 22:13:21.097] [00003258] Restart required: False
+[2026-02-20 22:13:21.097] [00003258] === Logging ended ===

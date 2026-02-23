@@ -1,0 +1,14 @@
+[2026-02-20 19:29:02.305] [0000844C] === Logging started ===
+[2026-02-20 19:29:02.321] [0000844C] Executing: "C:\Program Files\dotnet\dotnet.EXE" build D:\Reenbit\src\api\CarRentalApi/CarRentalApi/CarRentalApi.csproj, PID: 33868, PPID: 15104
+[2026-02-20 19:29:02.325] [0000844C] IsElevated: False
+[2026-02-20 19:29:02.325] [0000844C] Is64BitProcess: True
+[2026-02-20 19:29:02.325] [0000844C] RebootPending: False
+[2026-02-20 19:29:02.325] [0000844C] ProcessorArchitecture: amd64
+[2026-02-20 19:29:02.325] [0000844C] HostArchitecture: x64
+[2026-02-20 19:29:02.325] [0000844C] SdkDirectory: 10.0.103
+[2026-02-20 19:29:02.325] [0000844C] VerifySignatures: False
+[2026-02-20 19:29:02.325] [0000844C] SDK feature band: 10.0.100
+[2026-02-20 19:29:36.184] [0000844C] Shutting down
+[2026-02-20 19:29:36.184] [0000844C] Shutdown completed.
+[2026-02-20 19:29:36.184] [0000844C] Restart required: False
+[2026-02-20 19:29:36.186] [0000844C] === Logging ended ===
